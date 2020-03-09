@@ -24,15 +24,18 @@ if (stepNum ===0 || isNaN(stepNum)) {
     for (let i = startNum; i <= endNum; i += stepNum){
         outputNum.push(i);
     };
+    
     var sum = array.reduceRight(function(a,b){
         return a+b;
     },0);
+    
     var toBinary =  function (decNum){
         return parseInt(decNum,10).toString(2);
     };
     for (let decNum of outputNum) {
     outputDecNum.push(toBinary(decNum));
     };    
+    
     output1.innerHTML='<p>'+`The generated array is ${outputNum.join(',')}`+'</p>';
     output2.innerHTML='<p>'+`The sum is ${sum}`+'<p>';
     output3.innerHTML='<p>'+`The binary of abolut element values are: ${outputDecNum.join(',')}`+'</p>';
@@ -40,15 +43,18 @@ if (stepNum ===0 || isNaN(stepNum)) {
     for (let i = startNum; i >= endNum; i += stepNum){
         outputNum.push(i);
     };
+   
     var sum = array.reduceRight(function(a,b){
         return a+b;
     },0);
+    
     var toBinary =  function (decNum){
         return parseInt(decNum,10).toString(2);
     };
     for (let decNum of outputNum) {
     outputDecNum.push(toBinary(decNum));
     };    
+    
     output1.innerHTML='<p>'+`The generated array is ${outputNum.join(',')}`+'</p>';
     output2.innerHTML='<p>'+`The sum is ${sum}`+'<p>';
     output3.innerHTML='<p>'+`The binary of abolut element values are: ${outputDecNum.join(',')}`+'</p>';
