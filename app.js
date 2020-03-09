@@ -38,7 +38,7 @@ if (stepNum ===0 || isNaN(stepNum)) {
     
     output1.innerHTML='<p>'+`The generated array is ${outputNum.join(',')}`+'</p>';
     output2.innerHTML='<p>'+`The sum is ${sum}`+'<p>';
-    output3.innerHTML='<p>'+`The binary of absolut element values are: ${outputDecNum.join(',')}`+'</p>';
+    output3.innerHTML='<p>'+`The binary of abolut element values are: ${outputDecNum.join(',')}`+'</p>';
 }else{
     for (let i = startNum; i >= endNum; i += stepNum){
         outputNum.push(i);
@@ -57,7 +57,7 @@ if (stepNum ===0 || isNaN(stepNum)) {
     
     output1.innerHTML='<p>'+`The generated array is ${outputNum.join(',')}`+'</p>';
     output2.innerHTML='<p>'+`The sum is ${sum}`+'<p>';
-    output3.innerHTML='<p>'+`The binary of absolut element values are: ${outputDecNum.join(',')}`+'</p>';
+    output3.innerHTML='<p>'+`The binary of abolut element values are: ${outputDecNum.join(',')}`+'</p>';
 };
 
 
